@@ -1,0 +1,2 @@
+--I learned a new function called datediff(par1,par2)=no of days different to solve this approache problem
+select w1.id from weather w1,weather w2 where datediff(w1.recorddate,w2.recorddate)=1 and w1.temperature > w2.temperature;
