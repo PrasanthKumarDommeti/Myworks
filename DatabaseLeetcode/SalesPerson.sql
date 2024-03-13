@@ -1,0 +1,2 @@
+--It was a trick question with subquery
+select s.name from salesperson s where s.name not in (select s.name from salesperson s,company c,orders o where c.name   like 'RED' and c.com_id = o.com_id and o.sales_id =s.sales_id);
