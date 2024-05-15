@@ -5,4 +5,4 @@ WHERE primary_flag='Y' OR
     (SELECT employee_id
     FROM Employee
     Group by employee_id
-    having count(employee_id)=1)
+    having count(employee_id)=1)W
